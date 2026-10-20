@@ -11,17 +11,25 @@ config_version=5
 [application]
 
 config/name="Base Godot Game"
-config/features=PackedStringArray("4.7", "GL Compatibility")
+config/features=PackedStringArray("4.7", "C#", "GL Compatibility")
 config/icon="res://icon.svg"
+
+[autoload]
+
+GameplayCueManager="*uid://bh6ixabs0w700"
 
 [display]
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
 
+[dotnet]
+
+project/assembly_name="Base Godot Game"
+
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/godot_git/plugin.cfg")
+enabled=PackedStringArray("res://addons/GodotGAS/plugin.cfg", "res://addons/godot_git/plugin.cfg", "res://addons/kanban_tasks/plugin.cfg", "res://addons/ruzta/plugin.cfg", "res://addons/yard/plugin.cfg")
 
 [physics]
 
